@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94DD88BE12844BB000A6D2E2 /* OrientationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DD88BC12844BB000A6D2E2 /* OrientationCommand.h */; };
+		94DD88BF12844BB000A6D2E2 /* OrientationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DD88BD12844BB000A6D2E2 /* OrientationCommand.m */; };
 		AA747D9F0F9514B9006C5449 /* Frank_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Frank_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		D629926B11AB2D1F00CE0FB0 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D629926911AB2D1F00CE0FB0 /* AsyncSocket.h */; };
@@ -125,6 +127,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94DD88BC12844BB000A6D2E2 /* OrientationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrientationCommand.h; path = src/OrientationCommand.h; sourceTree = SOURCE_ROOT; };
+		94DD88BD12844BB000A6D2E2 /* OrientationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrientationCommand.m; path = src/OrientationCommand.m; sourceTree = SOURCE_ROOT; };
 		AA747D9E0F9514B9006C5449 /* Frank_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frank_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libFrank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrank.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +298,8 @@
 		08FB77AEFE84172EC02AAC07 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				94DD88BC12844BB000A6D2E2 /* OrientationCommand.h */,
+				94DD88BD12844BB000A6D2E2 /* OrientationCommand.m */,
 				D6D79B5B11D7FB8B003E0E60 /* Operation.h */,
 				D6D79B5C11D7FB8B003E0E60 /* Operation.m */,
 				D6D05CA111C883AA0081C5A5 /* DumpCommand.h */,
@@ -550,6 +556,7 @@
 				D6D05CC111C883AA0081C5A5 /* StaticResourcesRoute.h in Headers */,
 				D6D05CC311C883AA0081C5A5 /* UISpecCommandReceiver.h in Headers */,
 				D6D79B5D11D7FB8B003E0E60 /* Operation.h in Headers */,
+				94DD88BE12844BB000A6D2E2 /* OrientationCommand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +588,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Frank" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* Frank */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -662,6 +676,7 @@
 				D6D05CC211C883AA0081C5A5 /* StaticResourcesRoute.m in Sources */,
 				D6D05CC411C883AA0081C5A5 /* UISpecCommandReceiver.m in Sources */,
 				D6D79B5E11D7FB8B003E0E60 /* Operation.m in Sources */,
+				94DD88BF12844BB000A6D2E2 /* OrientationCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,9 +723,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -723,7 +739,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Release;
 		};
